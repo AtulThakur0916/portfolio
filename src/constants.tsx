@@ -81,6 +81,13 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 22,
+        name: "C#",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+        backgroundColor: "",
+    },
+    {
         id: 17,
         name: "GraphQL",
         imageUrl:
