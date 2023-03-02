@@ -99,15 +99,6 @@
     }
 }
 
-/* .appHeaderCircles {
-    flex: 0.75;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-    margin-left: 1rem;
-} */
 
 .appHeaderImg {
     flex: 1;
@@ -118,7 +109,6 @@
     position: relative;
 }
 .appHeaderImg img {
-    /* width: 100%; */
     object-fit: contain;
     z-index: 1;
 }
@@ -151,5 +141,8 @@
     }
     .appHeaderImg img {
         margin: 1rem 0.5rem;
+    }
+    .appHeaderImg {
+        margin: 2rem 0 0.5rem;
     }
 }

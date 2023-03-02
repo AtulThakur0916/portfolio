@@ -102,8 +102,8 @@ const Work = () => {
                                 </h4>
                                 <p className="pText">{each.description}</p>
                                 <p className="pText">
-                                    <span className="headText">
-                                        <strong>TechStack: </strong>
+                                    <span className="boldText">
+                                        Tech stack:{" "}
                                     </span>
                                     {each.techStack}
                                 </p>

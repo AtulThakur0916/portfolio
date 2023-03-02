@@ -57,4 +57,5 @@ export interface Experience {
     company: string;
     description: string;
     period: string;
+    techStack: string;
 }

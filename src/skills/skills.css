@@ -40,13 +40,6 @@
     height: 50%;
 }
 
-.skillsItem div:hover {
-    box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
-    transform: translateY(-7px);
-}
-.skillsList div:hover p {
-    color: #5df6d7;
-}
 
 .skillsItem div p {
     font-weight: 500;
