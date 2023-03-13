@@ -34,7 +34,6 @@
 .socialMedia a:hover {
     transform: translateY(-7px);
     color: #5df6d7;
-    filter: drop-shadow(0 0 20px rgba(93, 246, 215, 0.4));
 }
 
 .socialMedia div {
