@@ -59,7 +59,13 @@ const Skills = () => {
                                         {work.name}
                                     </h4>
                                     <p className="pText company">
-                                        {work.company}
+                                        <a
+                                            href={work.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {work.company}
+                                        </a>
                                     </p>
                                     <p>{work.period}</p>
 

@@ -214,6 +214,7 @@ export const experiences: Experience[] = [
         company: "MaibornWolff GmbH",
         description: "Full Stack Application Development in Agile environment.",
         period: "11/22-present",
+        url: "https://www.maibornwolff.de/",
         techStack:
             "TypeScript, C#, Angular, Vue.js, Vuetify, React.js, GraphQL, Jest, Git, Jira",
     },
@@ -223,6 +224,7 @@ export const experiences: Experience[] = [
         company: "Spiced Academy",
         description: "12 weeks intensive full time program.",
         period: "05/22-08/22",
+        url: "https://www.spiced-academy.com/en",
         techStack:
             "JavaScript, TypeScript, Handlebars, jQuery, Vue.js, React, Redux, Socket.io, Jest, Node.js, Express, PostgreSQL, Git",
     },
@@ -233,6 +235,7 @@ export const experiences: Experience[] = [
         description:
             "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
         period: "02/22-03/22",
+        url: "https://startsteps.org/en",
         techStack:
             "Python, HTML, CSS, Bootstrap, JavaScript, Tableau, Canva, Figma, Git",
     },
