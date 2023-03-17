@@ -88,6 +88,13 @@ export const skills: Skill[] = [
         backgroundColor: "",
     },
     {
+        id: 23,
+        name: ".NET",
+        imageUrl:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg",
+        backgroundColor: "",
+    },
+    {
         id: 17,
         name: "GraphQL",
         imageUrl:
@@ -216,7 +223,7 @@ export const experiences: Experience[] = [
         period: "11/22-present",
         url: "https://www.maibornwolff.de/",
         techStack:
-            "TypeScript, C#, Angular, Vue.js, Vuetify, React.js, GraphQL, Jest, Git, Jira",
+            "TypeScript, C#, .NET, Angular, Vue.js, Vuetify, React.js, GraphQL, Jest, Git, Jira",
     },
     {
         id: 2,
