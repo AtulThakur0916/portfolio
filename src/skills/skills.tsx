@@ -18,18 +18,18 @@ const Skills = () => {
                 {" "}
                 <h1>Skills and experience</h1>
             </motion.div>
-            <div className="skillsContainer">
-                <motion.div className="skillsList">
+            <div className="skills-container">
+                <motion.div className="skill-list">
                     {skills.map((skill: Skill) => {
                         return (
                             <motion.div
                                 whileInView={{ opacity: [0, 1] }}
                                 transition={{ duration: 0.5 }}
-                                className="skillsItem appFlex"
+                                className="skill app-flex"
                                 key={skill.id}
                             >
                                 <div
-                                    className="appFlex"
+                                    className="app-flex"
                                     style={{
                                         backgroundColor: skill.backgroundColor,
                                     }}
@@ -39,26 +39,26 @@ const Skills = () => {
                                         alt={skill.name}
                                     />
                                 </div>
-                                <p className="pText">{skill.name}</p>
+                                <p className="p-text">{skill.name}</p>
                             </motion.div>
                         );
                     })}
                 </motion.div>
 
-                <motion.div className="skillsExp">
+                <motion.div className="work-experience">
                     {experiences.map((work: Experience) => {
                         return (
                             <div key={work.id}>
                                 <motion.div
                                     whileInView={{ opacity: [0, 1] }}
                                     transition={{ duration: 0.5 }}
-                                    className="skillsExpWork"
+                                    className="individual-work-experience"
                                     key={work.name}
                                 >
-                                    <h4 className="boldText titleName">
+                                    <h4 className="bold-text title-name">
                                         {work.name}
                                     </h4>
-                                    <p className="pText company">
+                                    <p className="p-text company">
                                         <a
                                             href={work.url}
                                             target="_blank"
@@ -69,9 +69,9 @@ const Skills = () => {
                                     </p>
                                     <p>{work.period}</p>
 
-                                    <p className="pText">{work.description}</p>
-                                    <p className="pText">
-                                        <span className="boldText">
+                                    <p className="p-text">{work.description}</p>
+                                    <p className="p-text">
+                                        <span className="bold-text">
                                             Tech stack:{" "}
                                         </span>
                                         {work.techStack}

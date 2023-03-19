@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function SocialMedia() {
     return (
-        <div className="socialMedia">
+        <div className="social-media">
             <div>
                 <a
                     href="https://github.com/JoaoTeixeira13"

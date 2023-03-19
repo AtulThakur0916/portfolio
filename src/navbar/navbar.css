@@ -27,8 +27,8 @@
     cursor: pointer;
     transform: translateY(-4px);
 }
-#navbar .appNavbar .resume h4:hover,
-#navbar .appNavbar .resume h4:active {
+#navbar .app-navbar .resume h4:hover,
+#navbar .app-navbar .resume h4:active {
     transform: none;
 }
 .icon {
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    #navbar .appNavbar {
+    #navbar .app-navbar {
         display: none;
     }
     .icon {
@@ -51,7 +51,7 @@
     }
 }
 
-.appNavbarMobile {
+.app-navbar-mobile {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -63,12 +63,12 @@
     color: #14243e;
     margin-right: 20px;
 }
-.appNavbarMobile svg {
+.app-navbar-mobile svg {
     width: 30px;
     height: 30px;
 }
 
-.appNavbarMobile div {
+.app-navbar-mobile div {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -84,12 +84,12 @@
     align-items: flex-end;
     flex-direction: column;
 }
-.appNavbarMobile div a {
+.app-navbar-mobile div a {
     width: 80%;
     text-align: end;
 }
-.appNavbarMobile div h4:hover,
-.appNavbarMobile .closingMobile:hover {
+.app-navbar-mobile div h4:hover,
+.app-navbar-mobile .closing-mobile-menu:hover {
     color: #5df6d7;
     transform: translateY(-4px);
 }
@@ -100,7 +100,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    #navbar .appNavbarMobile {
+    #navbar .app-navbar-mobile {
         display: none;
     }
     .resume {
@@ -120,21 +120,21 @@
         transform: translateY(-4px);
     }
 }
-.appNavbarMobile .closingMobile {
+.app-navbar-mobile .closing-mobile-menu {
     width: 35px;
     height: 35px;
     margin: 1rem 1rem 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.mobileSlide {
+.mobile-slide-menu {
     width: 100%;
     height: 100%;
     background-color: rgba(9, 20, 44, 0.95);
 }
-.mobileSlide a h4 {
+.mobile-slide-menu a h4 {
     font-size: 1.2rem;
 }
-#navbar .mobileSlide {
+#navbar .mobile-slide-menu {
     justify-content: center;
 }

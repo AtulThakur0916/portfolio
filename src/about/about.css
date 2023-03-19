@@ -5,18 +5,18 @@
     background-color: #09142c;
 }
 
-.appProfiles {
+.app-profiles {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
-.appProfiles div:hover .aboutTitles {
+.app-profiles div:hover .about-titles {
     color: #5df6d7;
 }
 
-.profileItem {
+.profile-item {
     width: 230px;
     display: flex;
     justify-content: flex-start;
@@ -25,35 +25,35 @@
     margin: 2rem 3rem;
 }
 
-.profileItem img {
+.profile-item img {
     width: 100%;
     height: 200px;
     border-radius: 15px;
     object-fit: cover;
 }
-.aboutBio {
+.about-bio {
     max-width: 600px;
 }
-.aboutWelcome {
+.about-welcome {
     color: #5df6d7;
 }
-.pText a {
+.p-text a {
     text-decoration: none;
     color: #5df6d7;
 }
 
 @media screen and (min-width: 2000px) {
-    .profileItem {
+    .profile-item {
         width: 370px;
         margin: 2rem 4rem;
     }
 
-    .profileItem img {
+    .profile-item img {
         height: 320px;
     }
 }
 @media screen and (max-width: 450px) {
-    #about .aboutBio {
+    #about .about-bio {
         margin: 0.5rem 1.5rem 2rem;
     }
 }

@@ -8,7 +8,7 @@
     margin: 0;
 }
 
-.workFilter {
+.work-filter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -17,7 +17,7 @@
     margin: 4rem 0 2rem;
 }
 
-.workFilter .workFilterItem {
+.work-filter .work-filter-item {
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     background-color: transparent;
@@ -29,19 +29,19 @@
     margin: 0.5rem;
 }
 
-.workFilter .workFilterItem:hover {
+.work-filter .work-filter-item:hover {
     background-color: #5df6d7;
     color: #09142c;
     box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 
 @media screen and (min-width: 2000px) {
-    .workFilter .workFilterItem {
+    .work-filter .work-filter-item {
         padding: 1rem 2rem;
         border-radius: 0.85rem;
     }
 }
-.workFilterItem.itemActive {
+.work-filter-item.active-item {
     transform: translateY(-7px);
 
     background-color: #5df6d7;
@@ -49,13 +49,13 @@
     box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
 }
 
-.workPortfolio {
+.work-portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.workPortfolio .workItem {
+.work-portfolio .work-item {
     width: 270px;
     flex-direction: column;
     margin: 2rem;
@@ -67,7 +67,7 @@
 }
 
 @media screen and (min-width: 700px) {
-    .workPortfolio .workItem {
+    .work-portfolio .work-item {
         width: 400px;
         padding: 1.25rem;
         border-radius: 0.75rem;
@@ -75,42 +75,42 @@
 }
 
 @media screen and (min-width: 2000px) {
-    .workPortfolio .workItem {
+    .work-portfolio .work-item {
         width: 470px;
         padding: 1.25rem;
         border-radius: 0.75rem;
     }
 }
 @media screen and (max-width: 300px) {
-    .workPortfolio .workItem {
+    .work-portfolio .work-item {
         width: 100%;
         margin: 1rem;
     }
 }
 @media screen and (max-width: 450px) {
-    .workPortfolio .workItem {
+    .work-portfolio .work-item {
         margin: 2rem 1rem;
     }
-    .workFilter {
+    .work-filter {
         margin: 2rem 1.5rem;
     }
 }
 
-.workPortfolio .workItem:has(.workImg:hover) {
+.work-portfolio .work-item:has(.work-image:hover) {
     transform: translateY(-7px);
     box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
     border: 1px solid #5df6d7;
 }
 
-.workPortfolio .workItem:hover .boldText.headText {
+.work-portfolio .work-item:hover .bold-text.head-text {
     color: #5df6d7;
 }
-.workImg {
+.work-image {
     width: 100%;
     height: 230px;
     position: relative;
 }
-.workImg img {
+.work-image img {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -118,17 +118,17 @@
 }
 
 @media screen and (min-width: 2000px) {
-    .workImg {
+    .work-image {
         height: 350px;
     }
 }
 @media screen and (min-width: 650px) {
-    .headText.workTitle {
+    .head-text.work-title {
         font-size: 2.5rem;
     }
 }
 
-.workHover {
+.work-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -141,7 +141,7 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
-.workHover div {
+.work-hover div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -152,24 +152,24 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.workHover div svg {
+.work-hover div svg {
     width: 50%;
     height: 50%;
 }
 
-.workContent {
+.work-content {
     padding: 0.5rem;
     width: 100%;
     position: relative;
     flex-direction: column;
 }
 
-.workContent h4 {
+.work-content h4 {
     margin-top: 2rem;
     line-height: 1.5rem;
 }
 
-.workContent .workTag {
+.work-content .work-tag {
     position: absolute;
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -177,6 +177,6 @@
     top: -25px;
 }
 
-.workContent .pText {
+.work-content .p-text {
     align-self: flex-start;
 }

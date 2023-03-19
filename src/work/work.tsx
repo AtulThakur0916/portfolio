@@ -43,15 +43,15 @@ const Work = () => {
 
     return (
         <>
-            <h2 className="headText workTitle">Some things I have built</h2>
-            <div className="workFilter">
+            <h2 className="head-text work-title">Some things I have built</h2>
+            <div className="work-filter">
                 {workFilter.map((each: string, index: number) => {
                     return (
                         <div
                             key={index}
                             onClick={() => handleWorkFilter(each)}
-                            className={`workFilterItem appFlex pText ${
-                                activeFilter === each ? "itemActive" : ""
+                            className={`work-filter-item app-flex p-text ${
+                                activeFilter === each ? "active-item" : ""
                             }`}
                         >
                             {each}
@@ -62,17 +62,17 @@ const Work = () => {
             <motion.div
                 animate={animateCard}
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
-                className="workPortfolio"
+                className="work-portfolio"
             >
                 {filterWork.map((each: PortfolioWork) => {
                     return (
-                        <div key={each.id} className="workItem appFlex">
+                        <div key={each.id} className="work-item app-flex">
                             <a
                                 href={each.repositoryUrl}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <div className="workImg appFlex">
+                                <div className="work-image app-flex">
                                     <img src={each.imageUrl} alt={each.title} />
                                     <motion.div
                                         whileHover={{ opacity: [0, 1] }}
@@ -81,7 +81,7 @@ const Work = () => {
                                             ease: "easeInOut",
                                             staggerChildren: 0.5,
                                         }}
-                                        className="workHover appFlex"
+                                        className="work-hover app-flex"
                                     >
                                         <motion.div
                                             whileInView={{ scale: [0, 1] }}
@@ -89,27 +89,27 @@ const Work = () => {
                                             transition={{
                                                 duration: 0.25,
                                             }}
-                                            className="appFlex"
+                                            className="app-flex"
                                         >
                                             <AiFillGithub />
                                         </motion.div>
                                     </motion.div>
                                 </div>
                             </a>
-                            <div className="workContent appFlex">
-                                <h4 className="boldText headText">
+                            <div className="work-content app-flex">
+                                <h4 className="bold-text head-text">
                                     {each.title}
                                 </h4>
-                                <p className="pText">{each.description}</p>
-                                <p className="pText">
-                                    <span className="boldText">
+                                <p className="p-text">{each.description}</p>
+                                <p className="p-text">
+                                    <span className="bold-text">
                                         Tech stack:{" "}
                                     </span>
                                     {each.techStack}
                                 </p>
 
-                                <div className="workTag appFlex">
-                                    <p className="pText"> {each.tag[0]}</p>
+                                <div className="work-tag app-flex">
+                                    <p className="p-text"> {each.tag[0]}</p>
                                 </div>
                             </div>
                         </div>

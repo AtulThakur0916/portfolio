@@ -4,14 +4,14 @@
     background-color: #09142c;
 }
 
-.skillsContainer {
+.skills-container {
     width: 80%;
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
 }
 
-.skillsList {
+.skill-list {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -20,14 +20,14 @@
     margin-right: 5rem;
 }
 
-.skillsItem {
+.skill {
     flex-direction: column;
     text-align: center;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
-.skillsItem div {
+.skill div {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -35,17 +35,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.skillsItem div img {
+.skill div img {
     width: 50%;
     height: 50%;
 }
 
-
-.skillsItem div p {
+.skill div p {
     font-weight: 500;
     margin-top: 0.5rem;
 }
-.skillsExpWork {
+.individual-work-experience {
     background-color: #14243e;
     padding: 1.5rem;
     margin: 2rem 0;
@@ -53,36 +52,36 @@
 .company {
     color: #5df6d7;
 }
-.titleName {
+.title-name {
     color: #e2edfc;
 }
 @media screen and (max-width: 900px) {
-    .skillsContainer {
+    .skills-container {
         width: 100%;
         flex-direction: column;
     }
-    .skillsList {
+    .skill-list {
         margin-right: 0;
         justify-content: center;
     }
 }
 
 @media screen and (min-width: 2000px) {
-    .skillsItem div {
+    .skill div {
         width: 150px;
         height: 150px;
         margin: 1rem 2rem;
     }
-    .skillsItem div p {
+    .skill div p {
         margin-top: 1rem;
     }
 }
 @media screen and (max-width: 450px) {
-    .skillsItem div {
+    .skill div {
         width: 70px;
         height: 70px;
     }
-    .skillsExpWork {
+    .individual-work-experience {
         margin: 1.5rem 1rem;
     }
 }

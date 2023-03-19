@@ -22,7 +22,7 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <h4 className="icon">JT</h4>
-            <div className="appNavbar">
+            <div className="app-navbar">
                 {sections.map((each: string, index: number) => (
                     <Link
                         activeClass="active"
@@ -38,7 +38,7 @@ export default function Navbar() {
                 ))}
                 {Resume}
             </div>
-            <div className="appNavbarMobile">
+            <div className="app-navbar-mobile">
                 <HiMenuAlt4 onClick={() => setToggle(true)} />
 
                 {toggle && (
@@ -46,9 +46,9 @@ export default function Navbar() {
                         whileInView={{ x: [300, 0] }}
                         transition={{ duration: 0.85, ease: "easeOut" }}
                     >
-                        <div className="mobileSlide">
+                        <div className="mobile-slide-menu">
                             <HiX
-                                className="closingMobile"
+                                className="closing-mobile-menu"
                                 onClick={() => setToggle(false)}
                             />
 

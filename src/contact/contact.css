@@ -6,10 +6,10 @@
 #contact h1 {
     margin: 0;
 }
-#contact .socialMedia {
+#contact .social-media {
     visibility: hidden;
 }
-#contact .socialMediaContact .socialMedia {
+#contact .social-media-contact .social-media {
     visibility: visible;
     flex-direction: row;
     display: flex;
@@ -17,25 +17,25 @@
     justify-content: space-between;
 }
 
-.contactCard a {
+.contact-card a {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
 }
-.contactCard a svg,
-#contact .socialMedia a svg {
+.contact-card a svg,
+#contact .social-media a svg {
     width: 50px;
     height: 50px;
     margin: 0 0.7rem;
 }
 
-.contactCard a:hover {
+.contact-card a:hover {
     transform: translateY(-7px);
     color: #5df6d7;
 }
 
-.contactCards {
+.contact-cards {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
     align-items: center;
 }
 
-.contactCard {
+.contact-card {
     min-width: 290px;
     display: flex;
     flex-direction: row;
@@ -57,11 +57,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-.contactCard:has(a:hover) {
+.contact-card:has(a:hover) {
     box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
 }
 
-.contactButton {
+.contact-button {
     color: #5df6d7;
     background-color: transparent;
     border: 1px solid #5df6d7;
@@ -73,10 +73,10 @@
     font-weight: 600;
     font-size: 1.2rem;
 }
-.contactButton:hover {
+.contact-button:hover {
     background-color: rgba(93, 246, 215, 0.4);
 }
-.contactCard.textBox {
+.contact-card.text-box {
     border: none;
     text-align: center;
     box-shadow: none;
@@ -84,15 +84,15 @@
     padding: 1rem;
 }
 @media screen and (max-width: 450px) {
-    .contactCards,
-    .contactCard {
+    .contact-cards,
+    .contact-card {
         width: 70vw;
         min-width: 250px;
     }
-    .contactCard {
+    .contact-card {
         padding: 3rem 1rem;
     }
-    .contactCards {
+    .contact-cards {
         padding: 0 1rem 2rem;
     }
 }

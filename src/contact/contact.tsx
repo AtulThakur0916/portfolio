@@ -5,10 +5,10 @@ import SocialMedia from "../socialMedia";
 const Contact = () => {
     return (
         <>
-            <h2 className="headText">Let's have a chat!</h2>
-            <div className="contactCards">
-                <div className="contactCard textBox">
-                    <p className="pText">
+            <h2 className="head-text">Let's have a chat!</h2>
+            <div className="contact-cards">
+                <div className="contact-card text-box">
+                    <p className="p-text">
                         Although I am currently not looking for a job
                         opportunity, I am always happy to connect. If you have
                         any questions, want to discuss anything tech related,
@@ -16,13 +16,16 @@ const Contact = () => {
                         out!
                     </p>
                 </div>
-                <div className="contactCard">
-                    <a href="mailto:j.teixeira.dev@gmail.com" className="pText">
-                        <button className="contactButton">Contact me</button>
+                <div className="contact-card">
+                    <a
+                        href="mailto:j.teixeira.dev@gmail.com"
+                        className="p-text"
+                    >
+                        <button className="contact-button">Contact me</button>
                     </a>
                 </div>
 
-                <div className="socialMediaContact contactCard">
+                <div className="social-media-contact contact-card">
                     <SocialMedia />
                 </div>
             </div>

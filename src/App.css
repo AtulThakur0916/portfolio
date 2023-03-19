@@ -3,7 +3,7 @@
     width: 100vw;
     color: #949db8;
 }
-.headText {
+.head-text {
     color: #e2edfc;
     max-width: 600px;
 }
@@ -18,7 +18,7 @@
     font-size: calc(10px + 2vmin);
 }
 
-.socialMedia {
+.social-media {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -26,17 +26,17 @@
 
     padding: 1rem;
 }
-.socialMedia a {
+.social-media a {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
-.socialMedia a:hover {
+.social-media a:hover {
     transform: translateY(-7px);
     color: #5df6d7;
 }
 
-.socialMedia div {
+.social-media div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -48,20 +48,20 @@
 }
 
 @media screen and (min-width: 2000px) {
-    .socialMedia div {
+    .social-media div {
         width: 70px;
         height: 70px;
 
         margin: 0.5rem 0;
     }
 
-    .socialMedia div svg {
+    .social-media div svg {
         width: 30px;
         height: 30px;
     }
 }
 
-.appContainer {
+.app-container {
     width: 100%;
     min-height: 100vh;
 
@@ -69,28 +69,28 @@
     flex-direction: row;
 }
 
-.appFlex {
+.app-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.appWrapper {
+.app-wrapper {
     flex: 1;
     width: 100%;
     flex-direction: column;
     padding: 4rem 2rem;
 }
 
-.pText {
+.p-text {
     font-weight: 500;
 }
-.boldText {
+.bold-text {
     font-weight: 900;
 }
 
 @media screen and (max-width: 450px) {
-    .appWrapper {
+    .app-wrapper {
         padding: 4rem 1rem 2rem;
     }
 }
@@ -128,23 +128,23 @@
 
 @media screen and (max-width: 500px) {
     .navigation,
-    .socialMedia {
+    .social-media {
         display: none;
     }
 }
 @media screen and (min-width: 500px) and (max-width: 590px) {
-    .appWrapper {
+    .app-wrapper {
         padding: 4rem 0rem;
     }
 }
 
-#contact .socialMedia {
+#contact .social-media {
     display: none;
 }
-#contact .socialMediaContact .socialMedia {
+#contact .social-media-contact .social-media {
     display: block;
 }
 
-#about.appContainer {
+#about.app-container {
     flex-direction: row;
 }

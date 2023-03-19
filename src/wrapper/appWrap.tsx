@@ -8,9 +8,9 @@ export default function AppWrap(
 ) {
     return function HOC() {
         return (
-            <div id={idName} className={`appContainer ${classNames}`}>
+            <div id={idName} className={`app-container ${classNames}`}>
                 <SocialMedia />
-                <div className="appWrapper appFlex">
+                <div className="app-wrapper app-flex">
                     <Component />
                 </div>
                 <NavigationDots active={idName} />
