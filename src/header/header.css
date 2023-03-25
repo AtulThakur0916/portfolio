@@ -61,8 +61,22 @@
     border-radius: 1.75rem;
     flex-direction: row;
     width: auto;
-    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
+    -webkit-animation: containerPulsar 2s ease-in-out infinite alternate;
+    -moz-animation: containerPulsar 2s ease-in-out infinite alternate;
+    animation: containerPulsar 2s ease-in-out infinite alternate;
 }
+
+@keyframes containerPulsar {
+    from {
+        box-shadow: 0 0 1px rgba(9, 20, 44, 0.5), 0 0 2px #27204a,
+            0 0 5px rgba(0, 255, 255, 0.5), 0 0 6px rgba(9, 20, 44, 0.5);
+    }
+    to {
+        box-shadow: 0 0 4px rgba(9, 20, 44, 0.5),
+            0 0 14px rgba(93, 246, 215, 0.6);
+    }
+}
+
 .greeting-badge div p {
     color: #5df6d7;
 }

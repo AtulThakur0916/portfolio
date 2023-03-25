@@ -12,9 +12,6 @@
     flex-wrap: wrap;
     margin-top: 2rem;
 }
-.app-profiles div:hover .about-titles {
-    color: #5df6d7;
-}
 
 .profile-item {
     width: 230px;

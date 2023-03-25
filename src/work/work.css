@@ -96,12 +96,12 @@
 }
 
 .work-portfolio .work-item:has(.work-image:hover) {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
     box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
-    border: 1px solid #5df6d7;
+    border: 1px solid rgba(93, 246, 215, 0.5);
 }
 
-.work-portfolio .work-item:hover .bold-text.head-text {
+.work-portfolio .work-item:has(.work-image:hover) .bold-text.head-text {
     color: #5df6d7;
 }
 .work-image {
