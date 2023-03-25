@@ -51,7 +51,7 @@
     align-items: center;
     margin: 1rem 0;
     padding: 4rem 2rem;
-    border-radius: 0.3rem;
+    border-radius: 0.25rem;
     border: 1px solid #5df6d7;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
@@ -65,7 +65,7 @@
     color: #5df6d7;
     background-color: transparent;
     border: 1px solid #5df6d7;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     padding: 1.25rem 1.75rem;
     text-decoration: none;
     cursor: pointer;

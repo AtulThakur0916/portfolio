@@ -28,7 +28,7 @@
 .profile-item img {
     width: 100%;
     height: 200px;
-    border-radius: 15px;
+    border-radius: 0.25rem;
     object-fit: cover;
 }
 .about-bio {

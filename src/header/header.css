@@ -58,7 +58,7 @@
 .greeting-badge {
     padding: 1rem 2rem;
     border: 1px solid #5df6d7;
-    border-radius: 15px;
+    border-radius: 1.75rem;
     flex-direction: row;
     width: auto;
     box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
