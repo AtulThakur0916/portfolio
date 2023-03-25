@@ -25,7 +25,7 @@
 #navbar div h4:active {
     color: #5df6d7;
     cursor: pointer;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 #navbar .app-navbar .resume h4:hover,
 #navbar .app-navbar .resume h4:active {
@@ -90,7 +90,7 @@
 .app-navbar-mobile div h4:hover,
 .app-navbar-mobile .closing-mobile-menu:hover {
     color: #5df6d7;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .resume {
@@ -116,7 +116,7 @@
     .resume:hover {
         background-color: rgba(93, 246, 215, 0.4);
         color: #5df6d7;
-        transform: translateY(-4px);
+        transform: translateY(-3px);
     }
 }
 .app-navbar-mobile .closing-mobile-menu {

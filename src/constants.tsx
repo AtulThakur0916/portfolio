@@ -237,7 +237,7 @@ export const experiences: Experience[] = [
     },
     {
         id: 1,
-        name: "Tech orientation",
+        name: "Tech compass course",
         company: "StartSteps",
         description:
             "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",

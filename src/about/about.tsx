@@ -25,7 +25,7 @@ const AboutMe = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        MaibornWolff
+                        <span className="company">MaibornWolff</span>
                     </a>
                     .
                 </p>

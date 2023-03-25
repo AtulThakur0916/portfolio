@@ -47,6 +47,28 @@
     transition: all 0.3s ease-in-out;
 }
 
+span.company {
+    display: inline-block;
+    position: relative;
+    color: #5df6d7;
+}
+span.company::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #5df6d7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+span.company:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 @media screen and (min-width: 2000px) {
     .social-media div {
         width: 70px;

@@ -48,11 +48,11 @@
     padding: 1.5rem;
     margin: 2rem 0;
 }
-.company {
-    color: #5df6d7;
-}
+
 .title-name {
     color: #e2edfc;
+    display: inline-block;
+    margin: 1rem 0.5rem 0.5rem 0;
 }
 @media screen and (max-width: 900px) {
     .skills-container {
@@ -77,6 +77,11 @@
     }
     .skill div p {
         margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .title-name {
+        display: block;
     }
 }
 @media screen and (max-width: 450px) {

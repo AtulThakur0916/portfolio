@@ -56,17 +56,18 @@ const Skills = () => {
                                     key={work.name}
                                 >
                                     <h4 className="bold-text title-name">
-                                        {work.name}
+                                        {work.name}{" "}
                                     </h4>
-                                    <p className="p-text company">
+                                    <span className="p-text company">
                                         <a
                                             href={work.url}
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            {work.company}
+                                            @{work.company}
                                         </a>
-                                    </p>
+                                    </span>
+
                                     <p>{work.period}</p>
 
                                     <p className="p-text">{work.description}</p>
