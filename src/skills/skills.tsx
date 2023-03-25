@@ -70,7 +70,12 @@ const Skills = () => {
 
                                     <p>{work.period}</p>
 
-                                    <p className="p-text">{work.description}</p>
+                                    <ul>
+                                        {work.description.map((item, index) => {
+                                            return <li key={index}>{item}</li>;
+                                        })}
+                                    </ul>
+
                                     <p className="p-text">
                                         <span className="bold-text">
                                             Tech stack:{" "}
