@@ -235,7 +235,7 @@ export const experiences: Experience[] = [
         name: "Full Stack Web Developer",
         company: "Spiced Academy",
         description: [
-            "Built four full stack web applications.",
+            "Built 4 full stack web applications.",
             "Developed expertise in frontend frameworks, as well as servers and databases.",
             "Successful graduation after a 12 weeks intensive full time program.",
         ],
@@ -327,7 +327,7 @@ export const portfolioWorks: PortfolioWork[] = [
         id: 6,
         title: "Portfolio",
         description:
-            "The page you are currently viewing. A portfolio to showcase some of my works.",
+            "The page you are currently viewing. A portfolio to showcase some of my personal projects.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/portfolio",
         imageUrl: "/works/portfolio.gif",
         techStack: "TypeScript, React",
