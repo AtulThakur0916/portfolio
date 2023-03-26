@@ -219,7 +219,7 @@ export const experiences: Experience[] = [
         id: 3,
         name: "Junior Software Engineer",
         company: "MaibornWolff GmbH",
-        description: [
+        achievements: [
             "Contributed as a full stack engineer to an electronic components configurator application, writing code in Angular, TypeScript, C# and .NET.",
             "Provided React.js and TypeScript support for a German car manufacturer's e-mobility project.",
             "Rebuild an internal web application using Vue.js, Vuetify, TypeScript and GraphQL.",
@@ -234,7 +234,7 @@ export const experiences: Experience[] = [
         id: 2,
         name: "Full Stack Web Developer",
         company: "Spiced Academy",
-        description: [
+        achievements: [
             "Built 4 full stack web applications.",
             "Developed expertise in frontend frameworks, as well as servers and databases.",
             "Successful graduation after a 12 weeks intensive full time program.",
@@ -248,7 +248,7 @@ export const experiences: Experience[] = [
         id: 1,
         name: "Tech compass course",
         company: "StartSteps",
-        description: [
+        achievements: [
             "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
             "Further developed technical and soft skills.",
         ],

@@ -55,7 +55,7 @@ export interface Experience {
     id: number;
     name: string;
     company: string;
-    description: string[];
+    achievements: string[];
     period: string;
     url: string;
     techStack: string;

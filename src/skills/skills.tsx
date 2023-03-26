@@ -71,9 +71,13 @@ const Skills = () => {
                                     <p>{work.period}</p>
 
                                     <ul>
-                                        {work.description.map((item, index) => {
-                                            return <li key={index}>{item}</li>;
-                                        })}
+                                        {work.achievements.map(
+                                            (item, index) => {
+                                                return (
+                                                    <li key={index}>{item}</li>
+                                                );
+                                            }
+                                        )}
                                     </ul>
 
                                     <p className="p-text">
