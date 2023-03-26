@@ -1,5 +1,5 @@
 #contact {
-    background-color: #14243e;
+    background-color: var(--blue);
     width: 100%;
     flex: 1;
 }
@@ -33,7 +33,7 @@
 
 .contact-card a:hover {
     transform: translateY(-7px);
-    color: #5df6d7;
+    color: var(--green);
 }
 
 .contact-cards {
@@ -53,19 +53,19 @@
     margin: 1rem 0;
     padding: 2.5rem;
     border-radius: 0.25rem;
-    border: 1px solid #5df6d7;
+    border: 1px solid var(--green);
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
 .contact-card:has(a:hover) {
-    box-shadow: 0 0 25px rgba(93, 246, 215, 0.4);
+    box-shadow: 0 0 25px var(--transparent-green);
 }
 
 .contact-button {
-    color: #5df6d7;
+    color: var(--green);
     background-color: transparent;
-    border: 1px solid #5df6d7;
+    border: 1px solid var(--green);
     border-radius: 0.25rem;
     padding: 1.25rem 1.75rem;
     text-decoration: none;
@@ -75,7 +75,7 @@
     font-size: 1.2rem;
 }
 .contact-button:hover {
-    background-color: rgba(93, 246, 215, 0.4);
+    background-color: var(--transparent-green);
 }
 .contact-card.text-box {
     border: none;

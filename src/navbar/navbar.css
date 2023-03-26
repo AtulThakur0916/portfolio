@@ -23,7 +23,7 @@
 }
 #navbar div h4:hover,
 #navbar div h4:active {
-    color: #5df6d7;
+    color: var(--green);
     cursor: pointer;
     transform: translateY(-3px);
 }
@@ -32,11 +32,11 @@
     transform: none;
 }
 .icon {
-    border: 3px solid #5df6d7;
+    border: 3px solid var(--green);
     padding: 13px;
     border-radius: 50%;
     margin-left: 2rem;
-    color: #5df6d7;
+    color: var(--green);
     align-self: center;
 }
 
@@ -46,7 +46,7 @@
     }
     .icon {
         padding: 8px;
-        border: 2px solid #5df6d7;
+        border: 2px solid var(--green);
     }
 }
 
@@ -58,8 +58,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #949db8;
-    color: #14243e;
+    background-color: var(--grey);
+    color: var(--blue);
     margin-right: 20px;
 }
 .app-navbar-mobile svg {
@@ -73,7 +73,7 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-    color: #949db8;
+    color: var(--grey);
     box-sizing: content-box;
 
     width: 100vw;
@@ -89,7 +89,7 @@
 }
 .app-navbar-mobile div h4:hover,
 .app-navbar-mobile .closing-mobile-menu:hover {
-    color: #5df6d7;
+    color: var(--green);
     transform: translateY(-3px);
 }
 
@@ -109,13 +109,13 @@
         display: flex;
         flex-direction: column;
         margin-right: 20px;
-        border: 1px solid #5df6d7;
+        border: 1px solid var(--green);
         border-radius: 0.25rem;
         transition: all 0.3s ease-in-out;
     }
     .resume:hover {
-        background-color: rgba(93, 246, 215, 0.4);
-        color: #5df6d7;
+        background-color: var(--transparent-green);
+        color: var(--green);
         transform: translateY(-3px);
     }
 }

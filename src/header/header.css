@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background-color: #14243e;
+    background-color: var(--blue);
 }
 .app-header {
     flex: 1;
@@ -57,7 +57,7 @@
 .job-tag,
 .greeting-badge {
     padding: 1rem 2rem;
-    border: 1px solid #5df6d7;
+    border: 1px solid var(--green);
     border-radius: 1.75rem;
     flex-direction: row;
     width: auto;
@@ -78,7 +78,7 @@
 }
 
 .greeting-badge div p {
-    color: #5df6d7;
+    color: var(--green);
 }
 .job-tag {
     flex-direction: column;

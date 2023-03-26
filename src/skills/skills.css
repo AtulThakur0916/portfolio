@@ -6,7 +6,7 @@ li {
 #skills {
     flex: 1;
     width: 100%;
-    background-color: #09142c;
+    background-color: var(--dark-blue);
 }
 
 .skills-container {
@@ -35,7 +35,7 @@ li {
     width: 90px;
     height: 90px;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background-color: #e2edfc;
+    background-color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 
@@ -49,13 +49,13 @@ li {
     margin-top: 0.5rem;
 }
 .individual-work-experience {
-    background-color: #14243e;
+    background-color: var(--blue);
     padding: 1.5rem;
     margin: 2rem 0;
 }
 
 .title-name {
-    color: #e2edfc;
+    color: var(--white);
     display: inline-block;
     margin: 1rem 0.5rem 0.5rem 0;
 }

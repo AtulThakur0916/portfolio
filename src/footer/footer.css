@@ -1,10 +1,9 @@
 #footer {
     height: 70px;
-    background-color: #09142c;
+    background-color: var(--dark-blue);
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-

@@ -1,10 +1,19 @@
+:root {
+    --blue: #14243e;
+    --dark-blue: #09142c;
+    --green: #5df6d7;
+    --transparent-green: rgba(93, 246, 215, 0.5);
+    --grey: #949db8;
+    --white: #e2edfc;
+}
+
 .App {
     text-align: left;
     width: 100vw;
-    color: #949db8;
+    color: var(--grey);
 }
 .head-text {
-    color: #e2edfc;
+    color: var(--white);
     max-width: 600px;
 }
 
@@ -33,7 +42,7 @@
 }
 .social-media a:hover {
     transform: translateY(-7px);
-    color: #5df6d7;
+    color: var(--green);
 }
 
 .social-media div {
@@ -50,7 +59,7 @@
 span.company {
     display: inline-block;
     position: relative;
-    color: #5df6d7;
+    color: var(--green);
 }
 span.company::after {
     content: "";
@@ -60,7 +69,7 @@ span.company::after {
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: #5df6d7;
+    background-color: var(--green);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -79,7 +88,7 @@ ul li:before {
     content: "»";
     position: absolute;
     left: 0;
-    color: #5df6d7;
+    color: var(--green);
 }
 
 @media screen and (min-width: 2000px) {
@@ -143,7 +152,7 @@ ul li:before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #949db8;
+    background-color: var(--grey);
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
@@ -151,7 +160,7 @@ ul li:before {
 .navigation-dot:hover {
     background-color: #9ee4d666;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(93, 246, 215, 0.4);
+    box-shadow: 0 0 20px var(--transparent-green);
 }
 
 @media screen and (min-width: 2000px) {

@@ -2,7 +2,7 @@
     width: 100%;
     flex: 1;
     flex-direction: column;
-    background-color: #09142c;
+    background-color: var(--dark-blue);
 }
 
 .app-profiles {
@@ -32,11 +32,11 @@
     max-width: 600px;
 }
 .about-welcome {
-    color: #5df6d7;
+    color: var(--green);
 }
 .p-text a {
     text-decoration: none;
-    color: #5df6d7;
+    color: var(--green);
 }
 
 @media screen and (min-width: 2000px) {

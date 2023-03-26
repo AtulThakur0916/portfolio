@@ -220,7 +220,7 @@ export const experiences: Experience[] = [
         name: "Junior Software Engineer",
         company: "MaibornWolff GmbH",
         description: [
-            "Contributed as a full stack engineer to an application that configures electronic components, writing code in Angular, TypeScript, C# and .NET.",
+            "Contributed as a full stack engineer to an electronic components configurator application, writing code in Angular, TypeScript, C# and .NET.",
             "Provided React.js and TypeScript support for a German car manufacturer's e-mobility project.",
             "Rebuild an internal web application using Vue.js, Vuetify, TypeScript and GraphQL.",
             "Worked in Agile Environment, communicating with cross-functional teams and clients on a daily basis.",
@@ -235,9 +235,9 @@ export const experiences: Experience[] = [
         name: "Full Stack Web Developer",
         company: "Spiced Academy",
         description: [
-            "Successful graduation after a 12 weeks intensive full time program.",
             "Built four full stack web applications.",
             "Developed expertise in frontend frameworks, as well as servers and databases.",
+            "Successful graduation after a 12 weeks intensive full time program.",
         ],
         period: "05/22-08/22",
         url: "https://www.spiced-academy.com/en",
@@ -249,8 +249,8 @@ export const experiences: Experience[] = [
         name: "Tech compass course",
         company: "StartSteps",
         description: [
-            "Further developed technical and soft skills.",
             "Project based topics: Data Analytics, Web Development, UX/UI Design, Cybersecurity, Digital Marketing, Project Management, Agile Methodologies.",
+            "Further developed technical and soft skills.",
         ],
         period: "02/22-03/22",
         url: "https://startsteps.org/en",
