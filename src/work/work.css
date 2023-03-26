@@ -32,7 +32,6 @@
 .work-filter .work-filter-item:hover:not(.active-item) {
     background-color: var(--transparent-green);
     color: var(--dark-blue);
-    box-shadow: 0 0 20px var(--transparent-green);
 }
 
 @media screen and (min-width: 2000px) {
