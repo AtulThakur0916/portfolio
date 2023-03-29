@@ -9,11 +9,11 @@ const Contact = () => {
             <div className="contact-cards">
                 <div className="contact-card text-box">
                     <p className="p-text">
-                        Although I am currently not looking for a job
-                        opportunity, I am always happy to connect. If you have
-                        any questions, want to discuss anything tech related,
-                        play a game of chess or just say hi, feel free to reach
-                        out!
+                        I'm always open to chatting about anything tech-related,
+                        playing a game of chess, or just saying hello. While I'm
+                        not currently seeking new job opportunities, please feel
+                        free to reach out to me at any time. I would be happy to
+                        hear from you!
                     </p>
                 </div>
                 <div className="contact-card">

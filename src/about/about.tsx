@@ -30,9 +30,13 @@ const AboutMe = () => {
                     .
                 </p>
                 <p className="p-text">
-                    Prior to becoming a Software Engineer I studied Fashion
-                    Design, Fine Arts and ran an e-commerce business. When I am
-                    not coding, I enjoy playing chess and gardening.{" "}
+                    Before pursuing a career in software engineering, I had the
+                    opportunity to explore my passion for design, fine arts, and
+                    entrepreneurship. Through these experiences, I honed my
+                    creativity, attention to detail, and problem-solving skills
+                    - all of which have proven invaluable in my work as a
+                    software engineer. Outside of coding, I love to unwind by
+                    playing chess and tending to my garden.{" "}
                 </p>
             </div>
             <div className="app-profiles">
