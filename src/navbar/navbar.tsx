@@ -21,7 +21,16 @@ export default function Navbar() {
 
     return (
         <nav id="navbar">
-            <h4 className="icon">JT</h4>
+            <Link
+                activeClass="active"
+                to={"home"}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+            >
+                <h4 className="icon">JT</h4>
+            </Link>
             <div className="app-navbar">
                 {sections.map((each: string, index: number) => (
                     <Link
