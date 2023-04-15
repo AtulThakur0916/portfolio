@@ -8,6 +8,33 @@ import { sections } from "../constants";
 export default function Navbar() {
     const [toggle, setToggle] = useState<boolean>(false);
 
+    const NavbarLinks = sections.map((each: string, index: number) => (
+        <Link
+            activeClass="active"
+            to={each}
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            key={each + index}
+        >
+            <h4 onClick={() => setToggle(false)}>{each}</h4>
+        </Link>
+    ));
+
+    const NavbarIcon = (
+        <Link
+            activeClass="active"
+            to={"home"}
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+        >
+            <h4 className="icon">JT</h4>
+        </Link>
+    );
+
     const Resume = (
         <a
             className="resume"
@@ -21,30 +48,9 @@ export default function Navbar() {
 
     return (
         <nav id="navbar">
-            <Link
-                activeClass="active"
-                to={"home"}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-            >
-                <h4 className="icon">JT</h4>
-            </Link>
+            {NavbarIcon}
             <div className="app-navbar">
-                {sections.map((each: string, index: number) => (
-                    <Link
-                        activeClass="active"
-                        to={each}
-                        spy={true}
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
-                        key={each + index}
-                    >
-                        <h4 onClick={() => setToggle(false)}>{each}</h4>
-                    </Link>
-                ))}
+                {NavbarLinks}
                 {Resume}
             </div>
             <div className="app-navbar-mobile">
@@ -61,21 +67,7 @@ export default function Navbar() {
                                 onClick={() => setToggle(false)}
                             />
 
-                            {sections.map((each: string, index: number) => (
-                                <Link
-                                    activeClass="active"
-                                    to={each}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-80}
-                                    duration={500}
-                                    key={each + index}
-                                >
-                                    <h4 onClick={() => setToggle(false)}>
-                                        {each}
-                                    </h4>
-                                </Link>
-                            ))}
+                            {NavbarLinks}
                             {Resume}
                         </div>
                     </motion.div>
