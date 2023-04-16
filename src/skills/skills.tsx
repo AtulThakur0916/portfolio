@@ -17,7 +17,6 @@ const Skills = () => {
                 initial="whileOutView"
                 animate={inView ? "whileInView" : "whileOutView"}
                 className="skills-title"
-                style={{ color: "var(--grey)" }}
                 ref={ref}
             >
                 <h1>Technology Stack</h1>

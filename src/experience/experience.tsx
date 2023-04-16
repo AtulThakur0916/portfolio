@@ -17,7 +17,6 @@ const WorkExperience = () => {
                 initial="whileOutView"
                 animate={inView ? "whileInView" : "whileOutView"}
                 className="experience-title"
-                style={{ color: "var(--grey)" }}
                 ref={ref}
             >
                 <h1>Experience</h1>
