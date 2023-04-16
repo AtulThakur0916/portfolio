@@ -27,7 +27,7 @@ export interface ScaleVariants {
 
 // work
 
-export interface PortfolioWork {
+export interface PortfolioProject {
     id: number;
     title: string;
     description: string;

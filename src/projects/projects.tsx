@@ -1,16 +1,16 @@
-import "./work.css";
+import "./projects.css";
 import { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../wrapper/appWrap";
-import { workFilter } from "../constants";
-import { portfolioWorks } from "../constants";
-import { PortfolioWork } from "../interfaces";
+import { projectFilter } from "../constants";
+import { portfolioProjects } from "../constants";
+import { PortfolioProject } from "../interfaces";
 import { AnimatedCard } from "../interfaces";
 
-const Work = () => {
-    const [filterWork, setFilterWork] =
-        useState<PortfolioWork[]>(portfolioWorks);
+const Projects = () => {
+    const [filterProject, setfilterProject] =
+        useState<PortfolioProject[]>(portfolioProjects);
     const [activeFilter, setActiveFilter] = useState<string>("All");
     const [animateCard, setAnimateCard] = useState<AnimatedCard>({
         y: 0,
@@ -24,33 +24,35 @@ const Work = () => {
         }, 500);
 
         if (activeFilter === "All") {
-            setFilterWork(portfolioWorks);
+            setfilterProject(portfolioProjects);
         } else {
-            let filteredDisplay: PortfolioWork[] = [];
+            let filteredDisplay: PortfolioProject[] = [];
 
-            for (let i = 0; i < portfolioWorks.length; i++) {
-                if (portfolioWorks[i].tag.includes(activeFilter)) {
-                    filteredDisplay.push(portfolioWorks[i]);
+            for (let i = 0; i < portfolioProjects.length; i++) {
+                if (portfolioProjects[i].tag.includes(activeFilter)) {
+                    filteredDisplay.push(portfolioProjects[i]);
                 }
             }
-            setFilterWork(filteredDisplay);
+            setfilterProject(filteredDisplay);
         }
     }, [activeFilter]);
 
-    const handleWorkFilter: Function = (each: string) => {
+    const handleProjectFilter: Function = (each: string) => {
         setActiveFilter(each);
     };
 
     return (
         <>
-            <h2 className="head-text work-title">Some things I have built</h2>
-            <div className="work-filter">
-                {workFilter.map((each: string, index: number) => {
+            <h2 className="head-text project-title">
+                Some things I have built
+            </h2>
+            <div className="project-filter">
+                {projectFilter.map((each: string, index: number) => {
                     return (
                         <div
                             key={index}
-                            onClick={() => handleWorkFilter(each)}
-                            className={`work-filter-item app-flex p-text ${
+                            onClick={() => handleProjectFilter(each)}
+                            className={`project-filter-item app-flex p-text ${
                                 activeFilter === each ? "active-item" : ""
                             }`}
                         >
@@ -62,17 +64,17 @@ const Work = () => {
             <motion.div
                 animate={animateCard}
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
-                className="work-portfolio"
+                className="project-portfolio"
             >
-                {filterWork.map((each: PortfolioWork) => {
+                {filterProject.map((each: PortfolioProject) => {
                     return (
-                        <div key={each.id} className="work-item app-flex">
+                        <div key={each.id} className="project-item app-flex">
                             <a
                                 href={each.repositoryUrl}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <div className="work-image app-flex">
+                                <div className="project-image app-flex">
                                     <img src={each.imageUrl} alt={each.title} />
                                     <motion.div
                                         whileHover={{ opacity: [0, 1] }}
@@ -81,7 +83,7 @@ const Work = () => {
                                             ease: "easeInOut",
                                             staggerChildren: 0.5,
                                         }}
-                                        className="work-hover app-flex"
+                                        className="project-hover app-flex"
                                     >
                                         <motion.div
                                             whileInView={{ scale: [0, 1] }}
@@ -96,7 +98,7 @@ const Work = () => {
                                     </motion.div>
                                 </div>
                             </a>
-                            <div className="work-content app-flex">
+                            <div className="project-content app-flex">
                                 <h4 className="bold-text head-text">
                                     {each.title}
                                 </h4>
@@ -108,7 +110,7 @@ const Work = () => {
                                     {each.techStack}
                                 </p>
 
-                                <div className="work-tag app-flex">
+                                <div className="project-tag app-flex">
                                     <p className="p-text"> {each.tag[0]}</p>
                                 </div>
                             </div>
@@ -120,4 +122,4 @@ const Work = () => {
     );
 };
 
-export default AppWrap(Work, "work", "");
+export default AppWrap(Projects, "projects", "");

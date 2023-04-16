@@ -1,6 +1,6 @@
 import { About } from "./interfaces";
 import { ScaleVariants } from "./interfaces";
-import { PortfolioWork } from "./interfaces";
+import { PortfolioProject } from "./interfaces";
 import { Skill } from "./interfaces";
 import { Experience } from "./interfaces";
 
@@ -33,7 +33,7 @@ export const abouts: About[] = [
 export const sections: string[] = [
     "home",
     "about",
-    "work",
+    "projects",
     "skills",
     "contact",
 ];
@@ -259,9 +259,9 @@ export const experiences: Experience[] = [
     },
 ];
 
-// work
+// projects
 
-export const workFilter: string[] = [
+export const projectFilter: string[] = [
     "Single Page Application",
     "Web Application",
     "React JS",
@@ -269,7 +269,7 @@ export const workFilter: string[] = [
     "All",
 ];
 
-export const portfolioWorks: PortfolioWork[] = [
+export const portfolioProjects: PortfolioProject[] = [
     {
         id: 1,
         title: "Circe",

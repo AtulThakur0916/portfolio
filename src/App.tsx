@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./navbar/navbar";
 import Header from "./header/header";
 import AboutMe from "./about/about";
-import Work from "./work/work";
+import Projects from "./projects/projects";
 import Skills from "./skills/skills";
 import Contact from "./contact/contact";
 import Footer from "./footer/footer";
@@ -13,7 +13,7 @@ export default function App() {
             <Navbar />
             <Header />
             <AboutMe />
-            <Work />
+            <Projects />
             <Skills />
             <Contact />
             <Footer />
