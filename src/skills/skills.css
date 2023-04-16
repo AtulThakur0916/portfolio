@@ -48,11 +48,6 @@ li {
     font-weight: 500;
     margin-top: 0.5rem;
 }
-.individual-work-experience {
-    background-color: var(--blue);
-    padding: 1.5rem;
-    margin: 2rem 0;
-}
 
 .title-name {
     color: var(--white);
@@ -93,8 +88,5 @@ li {
     .skill div {
         width: 70px;
         height: 70px;
-    }
-    .individual-work-experience {
-        margin: 1.5rem 1rem;
     }
 }

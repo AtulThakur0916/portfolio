@@ -1,5 +1,5 @@
+import { Variants } from "framer-motion";
 import { About } from "./interfaces";
-import { ScaleVariants } from "./interfaces";
 import { PortfolioProject } from "./interfaces";
 import { Skill } from "./interfaces";
 import { Experience } from "./interfaces";
@@ -35,19 +35,39 @@ export const sections: string[] = [
     "about",
     "projects",
     "skills",
+    "experience",
     "contact",
 ];
 
 //skills
 
-export const scaleVariants: ScaleVariants = {
+export const slideFromLeft: Variants = {
     whileInView: {
-        scale: [0, 1],
-        opacity: [0, 1],
+        x: 0,
+        opacity: 1,
         transition: {
-            duration: 1,
+            duration: 0.75,
             ease: "easeInOut",
         },
+    },
+    whileOutView: {
+        x: "-100%",
+        opacity: 0,
+    },
+};
+
+export const slideFromRight: Variants = {
+    whileInView: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.6,
+            ease: "easeInOut",
+        },
+    },
+    whileOutView: {
+        x: "50%",
+        opacity: 0,
     },
 };
 

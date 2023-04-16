@@ -1,0 +1,45 @@
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.3rem;
+}
+
+#experience {
+    flex: 1;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.work-experience-container {
+    width: 80%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.individual-work-experience {
+    background-color: var(--dark-blue);
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.title-name {
+    color: var(--white);
+    display: inline-block;
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+@media screen and (max-width: 900px) {
+    .work-experience-container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px) {
+    .title-name {
+        display: block;
+    }
+}
+@media screen and (max-width: 450px) {
+    .individual-work-experience {
+        margin: 1.5rem 1rem;
+    }
+}
