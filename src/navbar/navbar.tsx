@@ -8,20 +8,21 @@ import { sections } from "../constants";
 export default function Navbar() {
     const [toggle, setToggle] = useState<boolean>(false);
 
-    const NavbarLinks = sections.map((each: string, index: number) => (
-        <Link
-            activeClass="active"
-            to={each}
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            key={each + index}
-        >
-            <h4 onClick={() => setToggle(false)}>{each}</h4>
-        </Link>
-    ));
-
+    const NavbarLinks = sections
+        .filter((each: string) => each !== "home")
+        .map((each: string, index: number) => (
+            <Link
+                activeClass="active"
+                to={each}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                key={each + index}
+            >
+                <h4 onClick={() => setToggle(false)}>{each}</h4>
+            </Link>
+        ));
     const NavbarIcon = (
         <Link
             activeClass="active"
