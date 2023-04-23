@@ -3,10 +3,8 @@ import { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../wrapper/appWrap";
-import { projectFilter } from "../constants";
-import { portfolioProjects } from "../constants";
-import { PortfolioProject } from "../interfaces";
-import { AnimatedCard } from "../interfaces";
+import { projectFilter, portfolioProjects } from "../constants";
+import { PortfolioProject, AnimatedCard } from "../interfaces";
 
 const Projects = () => {
     const [filterProject, setfilterProject] =
@@ -122,4 +120,4 @@ const Projects = () => {
     );
 };
 
-export default AppWrap(Projects, "projects", "");
+export default AppWrap(Projects, "projects");

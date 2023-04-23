@@ -2,8 +2,7 @@ import "./experience.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { slideFromRight } from "../constants";
-import { experiences } from "../constants";
+import { slideFromRight, experiences } from "../constants";
 import { Experience } from "../interfaces";
 import AppWrap from "../wrapper/appWrap";
 
@@ -73,4 +72,4 @@ const WorkExperience = () => {
     );
 };
 
-export default AppWrap(WorkExperience, "experience", "");
+export default AppWrap(WorkExperience, "experience");

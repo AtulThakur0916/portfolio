@@ -1,8 +1,5 @@
 import { Variants } from "framer-motion";
-import { About } from "./interfaces";
-import { PortfolioProject } from "./interfaces";
-import { Skill } from "./interfaces";
-import { Experience } from "./interfaces";
+import { About, PortfolioProject, Skill, Experience } from "./interfaces";
 
 //about section
 

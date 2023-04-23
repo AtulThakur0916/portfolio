@@ -33,4 +33,4 @@ const Contact = () => {
     );
 };
 
-export default AppWrap(Contact, "contact", "");
+export default AppWrap(Contact, "contact");

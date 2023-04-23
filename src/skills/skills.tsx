@@ -1,9 +1,7 @@
 import "./skills.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-import { slideFromLeft } from "../constants";
-import { skills } from "../constants";
+import { slideFromLeft, skills } from "../constants";
 import { Skill } from "../interfaces";
 import AppWrap from "../wrapper/appWrap";
 
@@ -53,4 +51,4 @@ const Skills = () => {
     );
 };
 
-export default AppWrap(Skills, "skills", "");
+export default AppWrap(Skills, "skills");

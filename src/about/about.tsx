@@ -65,4 +65,4 @@ const AboutMe = () => {
     );
 };
 
-export default AppWrap(AboutMe, "about", "");
+export default AppWrap(AboutMe, "about");
