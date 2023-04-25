@@ -32,7 +32,7 @@
 }
 
 .contact-card a:hover {
-    transform: translateY(-7px);
+    transform: translateY(-2px);
     color: var(--green);
 }
 
@@ -59,11 +59,11 @@
 }
 
 .contact-card:has(a:hover) {
-    box-shadow: 0 0 25px var(--transparent-green);
+    box-shadow: 0 0 15px var(--transparent-green);
 }
 
 .contact-button {
-    color: var(--green);
+    color: var(--gray);
     background-color: transparent;
     border: 1px solid var(--green);
     border-radius: 0.25rem;
@@ -75,6 +75,7 @@
     font-size: 1.2rem;
 }
 .contact-button:hover {
+    color: var(--green);
     background-color: var(--transparent-green);
 }
 .contact-card.text-box {
