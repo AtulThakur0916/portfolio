@@ -26,11 +26,11 @@ const Projects = () => {
         } else {
             let filteredDisplay: PortfolioProject[] = [];
 
-            for (let i = 0; i < portfolioProjects.length; i++) {
-                if (portfolioProjects[i].tag.includes(activeFilter)) {
-                    filteredDisplay.push(portfolioProjects[i]);
+            portfolioProjects.map((project) => {
+                if (project.tag.includes(activeFilter)) {
+                    filteredDisplay.push(project);
                 }
-            }
+            });
             setfilterProject(filteredDisplay);
         }
     }, [activeFilter]);
