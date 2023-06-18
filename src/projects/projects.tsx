@@ -26,7 +26,7 @@ const Projects = () => {
         } else {
             let filteredDisplay: PortfolioProject[] = [];
 
-            portfolioProjects.map((project) => {
+            portfolioProjects.forEach((project) => {
                 if (project.tag.includes(activeFilter)) {
                     filteredDisplay.push(project);
                 }
