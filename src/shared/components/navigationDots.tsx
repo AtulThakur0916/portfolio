@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
-import { ActiveProp } from "./interfaces";
-import { sections } from "./constants";
+import { ActiveProp } from "../models/interfaces";
+import { sections } from "../constants";
 
 export default function NavigationDots(props: ActiveProp) {
     return (

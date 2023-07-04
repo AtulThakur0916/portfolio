@@ -1,6 +1,6 @@
 import "./header.css";
 import { motion } from "framer-motion";
-import AppWrap from "../wrapper/appWrap";
+import AppWrap from "../../shared/components/wrapper/appWrap";
 
 const Header = () => {
     return (

@@ -1,6 +1,6 @@
 import "./contact.css";
-import AppWrap from "../wrapper/appWrap";
-import SocialMedia from "../socialMedia";
+import AppWrap from "../../shared/components/wrapper/appWrap";
+import SocialMedia from "../../shared/components/socialMedia";
 
 const Contact = () => {
     return (

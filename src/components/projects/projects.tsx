@@ -2,9 +2,9 @@ import "./projects.css";
 import { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import AppWrap from "../wrapper/appWrap";
-import { projectFilter, portfolioProjects } from "../constants";
-import { PortfolioProject, AnimatedCard } from "../interfaces";
+import AppWrap from "../../shared/components/wrapper/appWrap";
+import { projectFilter, portfolioProjects } from "../../shared/constants";
+import { PortfolioProject, AnimatedCard } from "../../shared/models/interfaces";
 
 const Projects = () => {
     const [filterProject, setfilterProject] =

@@ -1,5 +1,10 @@
 import { Variants } from "framer-motion";
-import { About, PortfolioProject, Skill, Experience } from "./interfaces";
+import {
+    About,
+    PortfolioProject,
+    Skill,
+    Experience,
+} from "./models/interfaces";
 
 //about section
 

@@ -1,9 +1,9 @@
 import "./skills.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideFromLeft, skills } from "../constants";
-import { Skill } from "../interfaces";
-import AppWrap from "../wrapper/appWrap";
+import { slideFromLeft, skills } from "../../shared/constants";
+import { Skill } from "../../shared/models/interfaces";
+import AppWrap from "../../shared/components/wrapper/appWrap";
 
 const Skills = () => {
     const { ref, inView } = useInView({ threshold: 0.2 });

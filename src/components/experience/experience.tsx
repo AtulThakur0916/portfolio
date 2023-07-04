@@ -2,9 +2,9 @@ import "./experience.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { slideFromRight, experiences } from "../constants";
-import { Experience } from "../interfaces";
-import AppWrap from "../wrapper/appWrap";
+import { slideFromRight, experiences } from "../../shared/constants";
+import { Experience } from "../../shared/models/interfaces";
+import AppWrap from "../../shared/components/wrapper/appWrap";
 
 const WorkExperience = () => {
     const { ref, inView } = useInView({ threshold: 0.2 });

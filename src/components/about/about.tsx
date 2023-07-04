@@ -1,8 +1,8 @@
 import "./about.css";
 import { motion } from "framer-motion";
-import { About } from "../interfaces";
-import { abouts } from "../constants";
-import AppWrap from "../wrapper/appWrap";
+import { About } from "../../shared/models/interfaces";
+import { abouts } from "../../shared/constants";
+import AppWrap from "../../shared/components/wrapper/appWrap";
 
 const AboutMe = () => {
     return (
