@@ -15,7 +15,7 @@ const Projects = () => {
         opacity: 1,
     });
 
-    useEffect((): void => {
+    useEffect(() => {
         setAnimateCard({ y: 100, opacity: 0 });
         setTimeout(() => {
             setAnimateCard({ y: 0, opacity: 1 });
@@ -35,7 +35,7 @@ const Projects = () => {
         }
     }, [activeFilter]);
 
-    const handleProjectFilter: Function = (each: string) => {
+    const handleProjectFilter = (each: string) => {
         setActiveFilter(each);
     };
 
