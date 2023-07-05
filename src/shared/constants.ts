@@ -5,6 +5,8 @@ import {
     Skill,
     Experience,
 } from "./models/interfaces";
+import { ProjectFilter } from "./models/project-filter";
+import { SectionIds } from "./models/section-ids";
 
 //about section
 
@@ -33,12 +35,12 @@ export const abouts: About[] = [
 ];
 
 export const sections: string[] = [
-    "home",
-    "about",
-    "projects",
-    "skills",
-    "experience",
-    "contact",
+    SectionIds.Home,
+    SectionIds.About,
+    SectionIds.Projects,
+    SectionIds.Skills,
+    SectionIds.Experience,
+    SectionIds.Contact,
 ];
 
 //skills
@@ -284,11 +286,11 @@ export const experiences: Experience[] = [
 // projects
 
 export const projectFilter: string[] = [
-    "Single Page Application",
-    "Web Application",
-    "React JS",
-    "Vue JS",
-    "All",
+    ProjectFilter.SinglePageApplication,
+    ProjectFilter.WebApplication,
+    ProjectFilter.ReactJS,
+    ProjectFilter.VueJS,
+    ProjectFilter.All,
 ];
 
 export const portfolioProjects: PortfolioProject[] = [

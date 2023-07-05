@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import AppWrap from "../../shared/components/wrapper/appWrap";
 import { projectFilter, portfolioProjects } from "../../shared/constants";
 import { PortfolioProject, AnimatedCard } from "../../shared/models/interfaces";
+import { ProjectFilter } from "../../shared/models/project-filter";
 
 const Projects = () => {
     const [filterProject, setfilterProject] =
         useState<PortfolioProject[]>(portfolioProjects);
-    const [activeFilter, setActiveFilter] = useState<string>("All");
+    const [activeFilter, setActiveFilter] = useState<string>(ProjectFilter.All);
     const [animateCard, setAnimateCard] = useState<AnimatedCard>({
         y: 0,
         opacity: 1,
@@ -21,7 +22,7 @@ const Projects = () => {
             setAnimateCard({ y: 0, opacity: 1 });
         }, 500);
 
-        if (activeFilter === "All") {
+        if (activeFilter === ProjectFilter.All) {
             setfilterProject(portfolioProjects);
         } else {
             let filteredDisplay: PortfolioProject[] = [];

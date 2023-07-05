@@ -4,12 +4,13 @@ import { Link } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { sections } from "../../shared/constants";
+import { SectionIds } from "../../shared/models/section-ids";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState<boolean>(false);
 
     const NavbarLinks = sections
-        .filter((each: string) => each !== "home")
+        .filter((each: string) => each !== SectionIds.Home)
         .map((each: string, index: number) => (
             <Link
                 activeClass="active"
@@ -26,7 +27,7 @@ export default function Navbar() {
     const NavbarIcon = (
         <Link
             activeClass="active"
-            to={"home"}
+            to={SectionIds.Home}
             spy={true}
             smooth={true}
             offset={-80}
