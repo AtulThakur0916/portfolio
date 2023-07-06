@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { sections } from "../../shared/constants";
-import { SectionIds } from "../../shared/models/section-ids";
+import { SectionIds } from "../../shared/models/sectionIds";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState<boolean>(false);

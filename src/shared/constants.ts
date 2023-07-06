@@ -5,8 +5,8 @@ import {
     Skill,
     Experience,
 } from "./models/interfaces";
-import { ProjectFilter } from "./models/project-filter";
-import { SectionIds } from "./models/section-ids";
+import { ProjectFilter } from "./models/projectFilter";
+import { SectionIds } from "./models/sectionIds";
 import { Technologies } from "./models/technologies";
 
 //about section

@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { slideFromRight, experiences } from "../../shared/constants";
 import { Experience } from "../../shared/models/interfaces";
 import AppWrap from "../../shared/components/wrapper/appWrap";
-import TechStack from "../../shared/components/tech-stack";
+import TechStack from "../../shared/components/techStack";
 
 const WorkExperience = () => {
     const { ref, inView } = useInView({ threshold: 0.2 });

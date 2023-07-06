@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import AppWrap from "../../shared/components/wrapper/appWrap";
 import { projectFilter, portfolioProjects } from "../../shared/constants";
 import { PortfolioProject, AnimatedCard } from "../../shared/models/interfaces";
-import { ProjectFilter } from "../../shared/models/project-filter";
-import TechStack from "../../shared/components/tech-stack";
+import { ProjectFilter } from "../../shared/models/projectFilter";
+import TechStack from "../../shared/components/techStack";
 
 const Projects = () => {
     const [filterProject, setfilterProject] =
