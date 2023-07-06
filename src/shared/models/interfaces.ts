@@ -20,7 +20,7 @@ export interface PortfolioProject {
     description: string;
     repositoryUrl: string;
     imageUrl: string;
-    techStack: string;
+    techStack: string[];
     tag: string[];
 }
 

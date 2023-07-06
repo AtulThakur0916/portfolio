@@ -7,6 +7,7 @@ import {
 } from "./models/interfaces";
 import { ProjectFilter } from "./models/project-filter";
 import { SectionIds } from "./models/section-ids";
+import { Technologies } from "./models/technologies";
 
 //about section
 
@@ -288,8 +289,8 @@ export const experiences: Experience[] = [
 export const projectFilter: string[] = [
     ProjectFilter.SinglePageApplication,
     ProjectFilter.WebApplication,
-    ProjectFilter.ReactJS,
-    ProjectFilter.VueJS,
+    ProjectFilter.React,
+    ProjectFilter.Vue,
     ProjectFilter.All,
 ];
 
@@ -301,9 +302,21 @@ export const portfolioProjects: PortfolioProject[] = [
             "A single page application that allows users to trade plants with each other.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/circe",
         imageUrl: "/works/circe.gif",
-        techStack:
-            "JavaScript, AWS S3, Node.js, Express.js, PostgreSQL, React & Redux.",
-        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.AWSS3,
+            Technologies.Node,
+            Technologies.Express,
+            Technologies.PostgreSQL,
+            Technologies.React,
+            Technologies.Redux,
+        ],
+        tag: [
+            ProjectFilter.SinglePageApplication,
+            ProjectFilter.WebApplication,
+            ProjectFilter.React,
+            ProjectFilter.All,
+        ],
     },
     {
         id: 2,
@@ -312,9 +325,22 @@ export const portfolioProjects: PortfolioProject[] = [
             "A single page application that allows users to join a social network.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/social-network",
         imageUrl: "/works/socialNetwork.gif",
-        techStack:
-            "JavaScript, AWS S3, Node.js, Express.js, PostgreSQL, Socket.IO, React & Redux.",
-        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.AWSS3,
+            Technologies.Node,
+            Technologies.Express,
+            Technologies.PostgreSQL,
+            Technologies.SocketIO,
+            Technologies.React,
+            Technologies.Redux,
+        ],
+        tag: [
+            ProjectFilter.SinglePageApplication,
+            ProjectFilter.WebApplication,
+            ProjectFilter.React,
+            ProjectFilter.All,
+        ],
     },
     {
         id: 3,
@@ -322,9 +348,20 @@ export const portfolioProjects: PortfolioProject[] = [
         description: "An Instagram-like, single page image board application.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/image-board",
         imageUrl: "/works/imageBoard.gif",
-        techStack:
-            "JavaScript, Vue.js, Node.js, Express.js, PostgreSQL, AWS S3.",
-        tag: ["Single Page Application", "Web Application", "Vue JS", "All"],
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.Vue,
+            Technologies.Node,
+            Technologies.Express,
+            Technologies.PostgreSQL,
+            Technologies.AWSS3,
+        ],
+        tag: [
+            ProjectFilter.SinglePageApplication,
+            ProjectFilter.WebApplication,
+            ProjectFilter.Vue,
+            ProjectFilter.All,
+        ],
     },
     {
         id: 4,
@@ -333,9 +370,15 @@ export const portfolioProjects: PortfolioProject[] = [
             "A website that allows users to register and sign a petition.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/petition",
         imageUrl: "/works/petition.gif",
-        techStack:
-            "JavaScript, Handlebars, Node.js, Express.js, PostgreSQL, Heroku.",
-        tag: ["Web Application", "All"],
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.Handlebars,
+            Technologies.Node,
+            Technologies.Express,
+            Technologies.PostgreSQL,
+            Technologies.Heroku,
+        ],
+        tag: [ProjectFilter.WebApplication, ProjectFilter.All],
     },
     {
         id: 5,
@@ -344,8 +387,13 @@ export const portfolioProjects: PortfolioProject[] = [
             "A two-player game where the first user to connect four pieces wins.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/connect-four",
         imageUrl: "/works/connectFour.gif",
-        techStack: "JavaScript, HTML, CSS & jQuery",
-        tag: ["Web Application", "All"],
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.HTML,
+            Technologies.CSS,
+            Technologies.JQuery,
+        ],
+        tag: [ProjectFilter.WebApplication, ProjectFilter.All],
     },
     {
         id: 6,
@@ -354,7 +402,12 @@ export const portfolioProjects: PortfolioProject[] = [
             "The page you are currently viewing. A portfolio to showcase some of my personal projects.",
         repositoryUrl: "https://github.com/JoaoTeixeira13/portfolio",
         imageUrl: "/works/portfolio.gif",
-        techStack: "TypeScript, React",
-        tag: ["Single Page Application", "Web Application", "React JS", "All"],
+        techStack: [Technologies.TypeScript, Technologies.React],
+        tag: [
+            ProjectFilter.SinglePageApplication,
+            ProjectFilter.WebApplication,
+            ProjectFilter.React,
+            ProjectFilter.All,
+        ],
     },
 ];

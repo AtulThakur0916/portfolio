@@ -6,6 +6,7 @@ import AppWrap from "../../shared/components/wrapper/appWrap";
 import { projectFilter, portfolioProjects } from "../../shared/constants";
 import { PortfolioProject, AnimatedCard } from "../../shared/models/interfaces";
 import { ProjectFilter } from "../../shared/models/project-filter";
+import TechStack from "../../shared/components/tech-stack";
 
 const Projects = () => {
     const [filterProject, setfilterProject] =
@@ -102,12 +103,10 @@ const Projects = () => {
                                     {each.title}
                                 </h4>
                                 <p className="p-text">{each.description}</p>
-                                <p className="p-text">
-                                    <span className="bold-text">
-                                        Tech stack:{" "}
-                                    </span>
-                                    {each.techStack}
-                                </p>
+
+                                <TechStack
+                                    props={each.techStack.sort()}
+                                ></TechStack>
 
                                 <div className="project-tag app-flex">
                                     <p className="p-text"> {each.tag[0]}</p>
