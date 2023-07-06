@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { slideFromRight, experiences } from "../../shared/constants";
 import { Experience } from "../../shared/models/interfaces";
 import AppWrap from "../../shared/components/wrapper/appWrap";
+import TechStack from "../../shared/components/tech-stack";
 
 const WorkExperience = () => {
     const { ref, inView } = useInView({ threshold: 0.2 });
@@ -56,12 +57,9 @@ const WorkExperience = () => {
                                         )}
                                     </ul>
 
-                                    <p className="p-text">
-                                        <span className="bold-text">
-                                            Tech stack:{" "}
-                                        </span>
-                                        {work.techStack}
-                                    </p>
+                                    <TechStack
+                                        props={work.techStack.sort()}
+                                    ></TechStack>
                                 </motion.div>
                             </div>
                         );

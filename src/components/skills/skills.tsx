@@ -30,12 +30,7 @@ const Skills = () => {
                                 className="skill app-flex"
                                 key={skill.id}
                             >
-                                <div
-                                    className="app-flex"
-                                    style={{
-                                        backgroundColor: skill.backgroundColor,
-                                    }}
-                                >
+                                <div className="app-flex">
                                     <img
                                         src={skill.imageUrl}
                                         alt={skill.name}

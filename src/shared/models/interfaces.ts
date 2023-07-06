@@ -35,7 +35,6 @@ export interface Skill {
     id: number;
     name: string;
     imageUrl: string;
-    backgroundColor: string;
 }
 
 export interface Experience {
@@ -45,5 +44,5 @@ export interface Experience {
     achievements: string[];
     period: string;
     url: string;
-    techStack: string;
+    techStack: string[];
 }

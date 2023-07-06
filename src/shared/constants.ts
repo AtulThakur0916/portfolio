@@ -79,163 +79,140 @@ export const slideFromRight: Variants = {
 export const skills: Skill[] = [
     {
         id: 10,
-        name: "HTML5",
+        name: Technologies.HTML,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        backgroundColor: "",
     },
     {
         id: 11,
-        name: "CSS3",
+        name: Technologies.CSS,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        backgroundColor: "",
     },
     {
         id: 1,
-        name: "JavaScript",
+        name: Technologies.JavaScript,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        backgroundColor: "",
     },
     {
         id: 2,
-        name: "TypeScript",
+        name: Technologies.TypeScript,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-        backgroundColor: "",
     },
     {
         id: 22,
-        name: "C#",
+        name: Technologies.CSharp,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-        backgroundColor: "",
     },
     {
         id: 23,
-        name: ".NET",
+        name: Technologies.DotNet,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg",
-        backgroundColor: "",
     },
     {
         id: 17,
-        name: "GraphQL",
+        name: Technologies.GraphQL,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-        backgroundColor: "",
     },
     {
         id: 16,
-        name: "Angular",
+        name: Technologies.Angular,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-        backgroundColor: "",
     },
     {
         id: 18,
-        name: "RxJS",
+        name: Technologies.RxJS,
         imageUrl: "https://rxjs.dev/assets/images/favicons/favicon-192x192.png",
-        backgroundColor: "",
     },
     {
         id: 3,
-        name: "Vue JS",
+        name: Technologies.Vue,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-        backgroundColor: "",
     },
     {
         id: 19,
-        name: "Vuetify",
+        name: Technologies.Vuetify,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg",
-        backgroundColor: "",
     },
     {
         id: 4,
-        name: "React JS",
+        name: Technologies.React,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        backgroundColor: "",
     },
     {
         id: 5,
-        name: "Redux",
+        name: Technologies.Redux,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-        backgroundColor: "",
     },
     {
         id: 6,
-        name: "Socket.io",
+        name: Technologies.SocketIO,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-        backgroundColor: "",
     },
     {
         id: 12,
-        name: "jQuery",
+        name: Technologies.JQuery,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg",
-        backgroundColor: "",
     },
     {
         id: 13,
-        name: "Handlebars",
+        name: Technologies.Handlebars,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original-wordmark.svg",
-        backgroundColor: "",
     },
 
     {
         id: 7,
-        name: "Node JS",
+        name: Technologies.Node,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        backgroundColor: "",
     },
     {
         id: 8,
-        name: "Express JS",
+        name: Technologies.Express,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        backgroundColor: "",
     },
     {
         id: 9,
-        name: "PostgreSql",
+        name: Technologies.PostgreSQL,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-        backgroundColor: "",
     },
     {
         id: 15,
-        name: "Jest",
+        name: Technologies.Jest,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-        backgroundColor: "",
     },
     {
         id: 20,
-        name: "Vitest",
+        name: Technologies.Vitest,
         imageUrl: "https://vitest.dev/logo-shadow.svg",
-        backgroundColor: "",
     },
     {
         id: 14,
-        name: "Git",
+        name: Technologies.Git,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        backgroundColor: "",
     },
     {
         id: 21,
-        name: "Jira",
+        name: Technologies.Jira,
         imageUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
-        backgroundColor: "",
     },
 ];
 
@@ -252,8 +229,20 @@ export const experiences: Experience[] = [
         ],
         period: "11/22-present",
         url: "https://www.maibornwolff.de/",
-        techStack:
-            "TypeScript, C#, .NET, Angular, Vue.js, Vuetify, React.js, GraphQL, Jest, Git, Jira",
+        techStack: [
+            Technologies.TypeScript,
+            Technologies.CSharp,
+            Technologies.DotNet,
+            Technologies.Angular,
+            Technologies.RxJS,
+            Technologies.Vue,
+            Technologies.Vuetify,
+            Technologies.React,
+            Technologies.GraphQL,
+            Technologies.Jest,
+            Technologies.Git,
+            Technologies.Jira,
+        ],
     },
     {
         id: 2,
@@ -266,8 +255,21 @@ export const experiences: Experience[] = [
         ],
         period: "05/22-08/22",
         url: "https://www.spiced-academy.com/en",
-        techStack:
-            "JavaScript, TypeScript, Handlebars, jQuery, Vue.js, React, Redux, Socket.io, Jest, Node.js, Express, PostgreSQL, Git",
+        techStack: [
+            Technologies.JavaScript,
+            Technologies.TypeScript,
+            Technologies.Handlebars,
+            Technologies.JQuery,
+            Technologies.Vue,
+            Technologies.React,
+            Technologies.Redux,
+            Technologies.SocketIO,
+            Technologies.Jest,
+            Technologies.Node,
+            Technologies.Express,
+            Technologies.PostgreSQL,
+            Technologies.Git,
+        ],
     },
     {
         id: 1,
@@ -279,8 +281,17 @@ export const experiences: Experience[] = [
         ],
         period: "02/22-03/22",
         url: "https://startsteps.org/en",
-        techStack:
-            "Python, HTML, CSS, Bootstrap, JavaScript, Tableau, Canva, Figma, Git",
+        techStack: [
+            Technologies.Python,
+            Technologies.HTML,
+            Technologies.CSS,
+            Technologies.Bootstrap,
+            Technologies.JavaScript,
+            Technologies.Tableau,
+            Technologies.Canva,
+            Technologies.Figma,
+            Technologies.Git,
+        ],
     },
 ];
 
