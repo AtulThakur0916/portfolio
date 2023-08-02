@@ -1,56 +1,56 @@
 #about {
-    width: 100%;
-    flex: 1;
-    flex-direction: column;
-    background-color: var(--dark-blue);
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--dark-blue);
 }
 
 .app-profiles {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .profile-item {
-    width: 230px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 2rem 3rem;
+  width: 230px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem 3rem;
 }
 
 .profile-item img {
-    width: 100%;
-    height: 200px;
-    border-radius: 0.25rem;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 0.25rem;
+  object-fit: cover;
 }
 .about-bio {
-    max-width: 600px;
+  max-width: 800px;
 }
 .about-welcome {
-    color: var(--green);
+  color: var(--green);
 }
 .p-text a {
-    text-decoration: none;
-    color: var(--green);
+  text-decoration: none;
+  color: var(--green);
 }
 
 @media screen and (min-width: 2000px) {
-    .profile-item {
-        width: 370px;
-        margin: 2rem 4rem;
-    }
+  .profile-item {
+    width: 370px;
+    margin: 2rem 4rem;
+  }
 
-    .profile-item img {
-        height: 320px;
-    }
+  .profile-item img {
+    height: 320px;
+  }
 }
 @media screen and (max-width: 450px) {
-    #about .about-bio {
-        margin: 0.5rem 1.5rem 2rem;
-    }
+  #about .about-bio {
+    margin: 0.5rem 1.5rem 2rem;
+  }
 }
